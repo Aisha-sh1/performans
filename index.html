@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery-Fırın</title>
+
+    <!--================================== Site Simgesi -- Favicon ======================================-->
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--================================== Remix Simgesi -- Remixicon ======================================-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
+
+
+    <!--================================== CSS ======================================-->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+
+
+<body> 
+    <!--================================== HEADER ======================================-->
+
+    <!--! MENU KISMI -anasayfa - yeni - hakkında - favoriler - navigasyon BAŞI-->
+
+    <header class="header" id="header">
+        <nav class="nav container"> 
+            <a href="#" class="nav__logo">Bakery-Fırın</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">News</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#favorite" class="nav__link">Favorites</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#visit" class="nav__link">Location</a>
+                    </li>
+                </ul>
+                <!--! MENU KISMI -anasayfa - yeni - hakkında - favoriler - navigasyon SON-->
+
+
+                <!--! Close button -- kapat düğmesi-->
+                <div class="nav__close" id="nav-close">  <!-- burdaki iconu remixicon sitesinden "close" iconu arayarak linkini kopyaladım. -->
+                    <i class="ri-close-line"></i>   
+                </div>
+
+
+                <!--! İMAGE -- FOTOĞRAFLAR-->
+                <img src="img/ekmekPoseti.png" alt="image" class="nav__img-1">
+                <img src="img/ekmekler.png" alt="image" class="nav__img-2">
+            </div>
+
+            <!--! Toggle Button -- Geçiş Düğmesi -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i> <!-- burdaki iconu remixicon sitesinden "menu" iconu arayarak linkini kopyaladım. -->
+            </div>
+        </nav>
+    </header>
+
+    <!--================================== MAIN ======================================-->
+    <main class="main">
+
+        <!-- ==============================HOME================================= -->
+        <section class="home section" id="home">
+            <img src="img/home-bacground.jpg" alt="image" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Ekmeklerin Eşsiz Lezzetine <br> Hemen Eriş
+                    </h1>
+                    <a href="#" class="button">Ekmek Seçin</a>
+                    <img src="img/ekmek1.png" alt="image" class="home__bread">
+                </div>
+                <div class="home__image">
+                    <img src="img/home-bread2.png" alt="image" class="home__img">
+                </div>
+
+                <footer class="home__footer">
+                    <div class="home__location">
+                        <i class="ri-map-pin-line"></i> <!--harita logosu-->
+                        <span>Kelebekeler caddesi <br> İstanbul </span>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+
+
+        <!-- ==============================NEWS================================= -->
+        <section class="new section" id="new">
+            <h2 class="section__title">Yeni Ekmekler</h2>
+
+            <div class="new__container container gird">
+                <div class="new__content grid">
+                    <article class="new__card">
+                        <div class="new__data">
+                            <h2 class="new__title">Çavdar Ekmeği</h2>
+                            <p class="new__descripton">İyi beslenme için sağlıklı, glutensiz ekşi mayayla pişirilir..</p>
+                        </div>
+                        <img src="img/cavdar-ekmegi.png" alt="image" class="new__img">
+                    </article>
+
+                    <!-- ------------------------------------------------------------ -->
+
+                    <article class="new__card">
+                        <div class="new__data">
+                            <h2 class="new__title">Tam Tahıllı Ekmek</h2>
+                            <p class="new__descripton">Organik mayasız undan hazırlanmış çıtır ve ev yapımı..</p>
+                        </div>
+                        <img src="img/tam-tahilli-ekmek.jpg" alt="image" class="new__img">
+                    </article>
+                    
+                    <!-- ------------------------------------------------------------ -->
+
+                    <article class="new__card">
+                        <div class="new__data">
+                            <h2 class="new__title">Çok Tahıllı Ekmek</h2>
+                            <p class="new__descripton">Lezzetli ve kırsal kesimden gelen farklı doğal tahıllarla yapılmış</p>
+                        </div>
+                        <img src="img/cok-tahilli.jpg" alt="image" class="new__img">
+                    </article>
+                </div>
+
+                <a href="#" class="new__button button">Daha Fazla Ekmek</a>
+            </div>
+        </section>
+
+         <!-- ==============================VİSİT================================= -->
+         <section class="visit section" id="visit">
+            
+         </section>
+
+
+
+
+        <!-- ==============================ABOUT================================= -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">Hakkımızda</h2>
+                    <p class="about__discripton">Markamız; alanında en kaliteli ürünleri, tüketiciye en uygun fiyat ile sunma amacıyla kurulmuş olup, geride bıraktığımız 19 yıl boyunca da, sektörde yaklaşımımızı aynı titizlik dâhilinde korumaya devam etmekteyiz.</p>
+                    <a href="#" class="button">Daha Fazla Bilgi</a>
+                    <img src="img/ekmek1.png" alt="image" class="about__bread">
+                </div>
+                <img src="img/hakkimizda.jpg" alt="image" class="about__img">
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================FAVORİTES================================= -->
+        <section class="favorite section" id="favorite">
+            <h2 class="section__title">Müşteri favorileri</h2>
+
+            <div class="favorite__container container grid">
+                <article class="favorite__card">
+                    <img src="img/ramazan-ekmek.jpg" alt="image" class="favorite__img">
+                    <div class="favorite__data">
+                        <h2 class="favorite__title">Ramazan Ekmeği</h2>
+                        <span class="favorite__subtitle">Ekmek</span>
+                        <h3 class="favorite__price">30TL</h3>
+                    </div>
+
+                    <button class="favorite__button button">
+                        <i class="ri-add-line"></i>
+                    </button>
+                </article>
+
+
+                <article class="favorite__card">
+                    <img src="img/kruvasan3.jpg" alt="image" class="favorite__img">
+                    <div class="favorite__data">
+                        <h2 class="favorite__title">Kruvasan Ekmeği</h2>
+                        <span class="favorite__subtitle">Ekmek</span>
+                        <h3 class="favorite__price">40TL</h3>
+                    </div>
+
+                    <button class="favorite__button button">
+                        <i class="ri-add-line"></i>
+                    </button>
+                </article>
+
+
+                <article class="favorite__card">
+                    <img src="img/cikolatali-ekmek.jpg" alt="image" class="favorite__img">
+                    <div class="favorite__data">
+                        <h2 class="favorite__title">Çikolatalı Ekmek</h2>
+                        <span class="favorite__subtitle">Ekmek</span>
+                        <h3 class="favorite__price">40TL</h3>
+                    </div>
+
+                    <button class="favorite__button button">
+                        <i class="ri-add-line"></i>
+                    </button>
+                </article>
+
+
+                <article class="favorite__card">
+                    <img src="img/yulafli-ekmek.jpg" alt="image" class="favorite__img">
+                    <div class="favorite__data">
+                        <h2 class="favorite__title">Yulaf Ekmeği</h2>
+                        <span class="favorite__subtitle">Ekmek</span>
+                        <h3 class="favorite__price">55TL</h3>
+                    </div>
+
+                    <button class="favorite__button button">
+                        <i class="ri-add-line"></i>
+                    </button>
+                </article>
+
+
+                <article class="favorite__card">
+                    <img src="img/kus-uzumlu-ekmek (1).jpg" alt="image" class="favorite__img">
+                    <div class="favorite__data">
+                        <h2 class="favorite__title">Üzümlü Ekmek</h2>
+                        <span class="favorite__subtitle">Ekmek</span>
+                        <h3 class="favorite__price">50TL</h3>
+                    </div>
+
+                    <button class="favorite__button button">
+                        <i class="ri-add-line"></i>
+                    </button>
+                </article>
+
+
+                <article class="favorite__card">
+                    <img src="img/cevizli-ekmek.jpg" alt="image" class="favorite__img">
+                    <div class="favorite__data">
+                        <h2 class="favorite__title">Cevizli Ekmek</h2>
+                        <span class="favorite__subtitle">Ekmek</span>
+                        <h3 class="favorite__price">60TL</h3>
+                    </div>
+
+                    <button class="favorite__button button">
+                        <i class="ri-add-line"></i>
+                    </button>
+                </article>
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--================================== FOOTER ======================================-->
+    <footer class="footer"></footer>
+
+
+
+    <!--================================== SCROLL UP ======================================-->
+    
+
+    <script src="js/app.js"></script>
+</body>
+
+
+
+
+
+</html>

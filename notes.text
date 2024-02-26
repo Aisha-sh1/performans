@@ -1,0 +1,239 @@
+1. css, img, js, index.html dosyaları açıldı.
+2. Fotoları yükledim
+3. kütüphaneleri yükledim. Google Fonts: danc700 ve monste 400, 500 ve 600 + remix kütüphanesi ve css dosyasını bağladım.
+4. değişken tanımlayıp özelliklerini verdim örnek: --first-color: hsl gibi...
+5. yıldız atarak css de genel özellik olarak margin ve padding 0 oldu.
+6. css de bu kodlar yazılıp özellikler belirlendi:
+/*--================================== Variables CSS -- CCS DEĞİŞKENLER======================================-*/
+:root {
+    --header-height: 3.5rem;
+    /*başlık yüksekliği*/
+
+
+    /*--===============================Colors -- Renkler ===============================-*/
+    /*hsl için bir yükleme yapıldı*/
+
+    --first-color: hsl(28, 88%, 62%);
+    --first-color-alt: hsl(28, 84%, 58%);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --text-color-light: hsl(0, 0%, 65%);
+    --black-color: hsl(0, 0%, 6%);
+    --body-color: hsl(0, 0%, 6%);
+    --container-color: hsl(0, 0%, 10%);
+
+    /*--===============================Font and typography ===============================-*/
+
+    --body-font: "Montserrat", sans-serif;
+    --second-font: "Dancing Script", cursive;
+    --biggest-font-size: 3rem;
+    --bigger-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+
+    /*--===============================Font weight ===============================-*/
+
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*--=============================== z index ===============================-*/
+    --z-tooltip: 400;
+    --z-fixed: 100;
+
+}
+
+/*--=============================== Responsive typography ===============================-*/
+@media screen and (min-wiidth: 1150px) {
+    :root {
+        --biggest-font-size: 5rem;
+        --bigger-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+
+    }
+}
+
+/*--=============================== Base ===============================-*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*--===================== Reusable Css Classes -- yeniden kullanılabilir css sınıfları ======================-*/
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5;
+}
+
+/*Tanımlanan grid değeri taşıyıcı içindeki elemanları satır ve sütun şeklinde konumlandırmayı sağlar. 
+Böylece alt elemanlar taşıyıcı içerisinde kolay bir şekilde konumlanabilir hale gelir.*/
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem, 1rem;
+}
+
+.section-title {
+    font-size: var(--bigger-font-size);
+    font-family: var(--second-font);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.main {
+    overflow: hidden; 
+    /*Overflow. Türkçeye taşmak(overflow) olarak çevirdiğimiz bu özellik
+    sınırlarını belirlediğimiz kutu elementinin içeriğinin
+    sınırları aşması durumunda nasıl davranacağını bildiren bir özelliktir.
+    Özelliğe atanan değerleri tek tek incelersek.
+    hidden - kutu sınırları dışına taşan alanları gizle.*/
+}
+
+7. HEADER YANİ ÜSTTEKİ KISMIN KODLARI:
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0; /* t0 yazıp enter basarsan direk kod bu hale gelir bu da zaman tasarrufunu sağlar*/
+    left: 0; /* aynı şey burda da geçerli. l0 yaparak çalış.*/
+    background-color: transparent;
+    z-index: var(--z-fixed);}
+
+8. MENULER:
+
+/* menuler ortaya alındı. menu çubuğu en sağa alındı. */
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+9. LOGONUN YAPILIŞI VE İMLEÇ ŞARTI:
+
+.nav__logo{
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
+    transition: color .4s;
+}
+
+.nav__logo:hover{
+    color: var(--first-color);
+}
+
+
+10. KAPATMA (X) TUŞU VE HAMBURGER MENUSU ÖZELLİKLERİ:
+
+.nav__toggle,
+.nav__close {
+    font-size: 1.5em;
+    color: var(--title-color);
+    cursor: pointer;
+    
+}
+
+11. RESPONSİVE DE MENU İÇİN KODLAR:
+
+@media screen and (max-width:1150px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: hsla(0, 0%, 6%, .2);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px); /*for safari*/
+        width: 80%;
+        height: 100%;
+        padding: 6rem 3rem 0;
+        transition: right .4s;
+    }
+}
+
+12. MENU KELİMLERİNİN ÖZELLİKLERİ:
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+13. MENU RENK ÖZELLİKLERİ VE ŞART ÖZELLİĞİ:
+
+.nav__link {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color .4s;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+14. MENU KISMININ KÖŞESİNDE BULUNAN ÇARPI İŞARETİ
+
+.nav__close {
+    position: absolute;
+}
+
+.nav__close{
+    top: 1rem;
+    right: 1.5rem;
+}
