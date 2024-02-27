@@ -635,7 +635,11 @@ background-color:#fade42;
     
 }
 
+/* ==================================SHOW SCROLL UP========================================== */
 
+.show-scroll{
+    bottom: 3rem;     /* bu satırı yazmazsak ok çıkmaz java kodlarını yazdıktan sonra bile. Denendi..*/
+}
 
 
 
