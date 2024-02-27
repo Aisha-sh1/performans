@@ -90,3 +90,30 @@ public class Main {
 }
 
 
+
+
+
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args) {
+        Scanner giris = new Scanner(System.in);
+
+        for(k=0; k<10;k++)
+        {
+            System.out.println("Bir sayı girin: ");
+            dizi[k]= giris.nextInt();
+        }
+
+        for(i=0; i<10;i++)
+        {
+            toplam=toplam+dizi[i];
+        }
+
+        System.out.println("Toplam: "+ toplam);
+        System.out.println("Ortalama: "+ toplam/10);
+
+
+    }
+}
+
