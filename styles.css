@@ -258,6 +258,11 @@ Böylece alt elemanlar taşıyıcı içerisinde kolay bir şekilde konumlanabili
     z-index: -1;
 }
 
+/* Active Link */
+.active-link{
+    color: var(--first-color); 
+    /* menu seçeneklerine basınca otomatik gider ve o seçeneğin rengi turuncu olur. */
+}
 
 
 /* ====================================HOME============================================= */
