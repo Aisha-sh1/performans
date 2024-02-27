@@ -70,5 +70,23 @@ public class Main {
 
   int[] dizi=new int[]{100,90,80,70,75,60,65,30,10,15,0}; //bu şekilde de yazabiliriz diziyi
 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner giris = new Scanner(System.in);
+
+        for(k=0; k<10;k++){
+            System.out.println("Bir sayı girin: ");
+            dizi[k]= giris.nextInt();
+        }
+
+        for(i=0; i<10;i++){
+            System.out.println(dizi[i]);
+        }
+
+
+
+    }
+}
 
 
