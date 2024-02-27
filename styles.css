@@ -504,10 +504,27 @@ background-color:#fade42;
     z-index:-1; /*bu kodla yazı fotoğrafın üstüne çıkmış oldu.*/
 }
 .visit__bg{
-    
+    object-fit: cover;
+    object-position: center;
 }
 
+.visit__shadow{
+    background: linear-gradient(180deg,
+                hsla(0,0%,6%)0%
+                hsla(0,0%,4%,.1)50%
+                hsla(0,0%,6%)100%); /*üstten ve alttan fotoğrafa gölge gibi bir efekt verildi*/
+}
 
+.visit__data{
+    text-align: center;
+}
+
+.visit__descripton{
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: 3rem; /*buton ile yazı (paragraf yazısı) arasında 3 remlik boşluk ayarlandı.*/
+    
+}
 
 
 
