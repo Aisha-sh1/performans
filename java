@@ -1,0 +1,48 @@
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        int[] dizi=new int[6]; //dizi tanımlama
+        dizi[0]=100; //dizi elemanına değer atama
+        dizi[2]=90;
+        dizi[3]=80;
+        dizi[4]=70;
+        dizi[5]=60;
+
+        System.out.println(dizi[2]); //dizi elemanı çağırma
+
+
+
+    }
+}
+
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner giris = new Scanner(System.in);
+        int[] dizi=new int[10];
+        dizi[0]=100; //dizi elemanına değer atama
+        dizi[2]=90;
+        dizi[3]=80;
+        dizi[4]=70;
+        dizi[5]=60;
+        dizi[6]=90;
+        dizi[7]=80;
+        dizi[8]=70;
+        dizi[9]=60;
+
+        System.out.println("Hangi elemanın notunu görmek istiyorsun.");
+        int a = giris.nextInt();
+        System.out.println(dizi[a]);
+
+
+
+
+
+
+
+    }
+}
